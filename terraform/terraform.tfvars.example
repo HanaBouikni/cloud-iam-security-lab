@@ -1,0 +1,14 @@
+# terraform.tfvars.example — Exemple de configuration
+#
+# Copiez ce fichier en « terraform.tfvars » et adaptez les valeurs.
+# NE committez PAS votre terraform.tfvars réel s'il contient des données sensibles
+# (il est déjà ignoré par .gitignore).
+
+aws_region      = "eu-west-3"
+project_name    = "iam-lab"
+
+developer_users = ["dev.alice", "dev.bob"]
+auditor_users   = ["audit.carol"]
+
+lab_bucket_name = "iam-lab-devs-sandbox"
+force_mfa       = true

@@ -1,0 +1,30 @@
+# --- Terraform ---
+# Répertoires et fichiers locaux
+**/.terraform/*
+.terraform.lock.hcl
+
+# Fichiers d'état (peuvent contenir des secrets) — ne jamais committer
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Fichiers de variables réels (potentiellement sensibles)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Plans binaires et logs de crash
+*.tfplan
+crash.log
+crash.*.log
+
+# Overrides locaux
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Divers ---
+.DS_Store
+Thumbs.db
+desktop.ini
